@@ -1,0 +1,4 @@
+# 返回图片
+GET http://localhost:8080/someDataFromReader
+
+###

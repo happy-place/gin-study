@@ -1,0 +1,43 @@
+# 正常请求 curl -v --form user=user --form password=password http://localhost:8080/login
+POST http://localhost:8080/login
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="user"
+
+user
+--WebAppBoundary
+Content-Disposition: form-data; name="password"
+
+password
+--WebAppBoundary--
+
+###
+
+# 缺少 name
+POST http://localhost:8080/login
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="password" # key
+
+password
+--WebAppBoundary--
+
+###
+
+# 缺少 password 错误
+POST http://localhost:8080/login
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="user"
+
+user
+--WebAppBoundary
+Content-Disposition: form-data; name="password"
+
+password1
+--WebAppBoundary--
+
+###

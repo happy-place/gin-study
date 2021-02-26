@@ -1,0 +1,7 @@
+GET http://localhost:8080/testing?name=tom&address=beijing
+
+###
+
+GET http://localhost:8080/testing
+
+###

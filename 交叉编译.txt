@@ -1,0 +1,27 @@
+1.MAC 下编译 Linux、Windows
+# Linux
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build filename.go
+
+# Windows
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build filename.go
+如: CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o helloworld-windows helloworld.go
+
+2.Linux 下编译 Mac、Windows
+# Mac
+CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build filename.go
+
+# Windows
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build filename.go
+
+3.Windows下编译Mac, Linux
+# Mac
+SET CGO_ENABLED=0
+SET GOOS=darwin
+SET GOARCH=amd64
+go build filename.go
+
+# Linux
+SET CGO_ENABLED=0
+SET GOOS=linux
+SET GOARCH=amd64
+go build filename.go

@@ -1,0 +1,7 @@
+### firstname 使用传入的
+GET http://localhost:8080/welcome?firstname=Tom&lastname=Hanks
+
+### firstname 使用默认的
+GET http://localhost:8080/welcome?lastname=Hanks
+
+###

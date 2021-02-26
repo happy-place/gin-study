@@ -1,0 +1,5 @@
+POST http://localhost:8080/submit
+content-type: application/x-www-form-urlencoded
+
+colors[]=red&colors[]=green&colors[]=yellow
+###

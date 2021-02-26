@@ -1,0 +1,29 @@
+### 成功解析body
+POST http://localhost:8080/shouldBind
+Content-Type: application/json
+
+{
+  "foo": "Hi"
+}
+### formA 尝试解析时，Request.Body 已经使用，再次解析时使用 body变成 EOF,因此肯定报错
+POST http://localhost:8080/shouldBind
+Content-Type: application/json
+
+{
+  "bar": "Hello"
+}
+### shouldBindBodyWith 先提取body，就可以重复使用
+POST http://localhost:8080/shouldBindBodyWith
+Content-Type: application/json
+
+{
+  "foo": "Hi"
+}
+###
+POST http://localhost:8080/shouldBindBodyWith
+Content-Type: application/json
+
+{
+  "bar": "Hello"
+}
+###

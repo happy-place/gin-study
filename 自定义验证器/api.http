@@ -1,0 +1,12 @@
+###
+
+# curl "localhost:8085/bookable?check_in=2018-04-16&check_out=2018-04-17"
+GET localhost:8085/bookable?check_in=2018-04-16&check_out=2018-04-17
+
+###
+
+# // 传入日期必须必今天大，否则校验不通过
+GET localhost:8085/bookable?check_in=2021-03-08&check_out=2021-03-09
+
+###
+

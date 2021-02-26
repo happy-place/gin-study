@@ -1,0 +1,21 @@
+###
+
+# curl -X POST http://localhost:8080/upload
+#  -F "upload[]=@/Users/appleboy/test1.zip"
+#  -F "upload[]=@/Users/appleboy/test2.zip"
+#  -H "Content-Type: multipart/form-data"
+POST http://localhost:8080/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="upload[]"; filename="redux原理.png"
+
+< /Users/huhao/Desktop/redux原理.png
+--WebAppBoundary
+Content-Disposition: form-data; name="upload[]"; filename="Redux异步调用.png"
+
+< /Users/huhao/Desktop/Redux异步调用.png
+--WebAppBoundary--
+
+###
+

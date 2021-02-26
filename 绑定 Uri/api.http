@@ -1,0 +1,5 @@
+### uuid 格式错误，无法解析
+GET http://localhost:8080/tom/11-22-33-44-55
+
+### uuid正确
+GET http://localhost:8080/tom/00148ce2-1d1a-4a1f-9b1b-95b2d9052f20

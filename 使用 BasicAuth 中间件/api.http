@@ -1,0 +1,17 @@
+# 正确请求
+GET http://localhost:8080/admin/secrets
+Authorization: Basic foo bar
+
+###
+
+# HTTP/1.1 401 Unauthorized 密码不正确
+GET http://localhost:8080/admin/secrets
+Authorization: Basic foo bar2
+
+###
+
+# 用户存在，但未找到相关信息
+GET http://localhost:8080/admin/secrets
+Authorization: Basic manu 4321
+
+###

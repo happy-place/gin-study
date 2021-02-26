@@ -1,0 +1,21 @@
+GET http://localhost:8080/someGet
+
+###
+POST http://localhost:8080/somePost
+
+###
+PUT http://localhost:8080/somePut
+
+###
+DELETE http://localhost:8080/someDelete
+
+###
+PATCH http://localhost:8080/somePatch
+
+###
+HEAD http://localhost:8080/someHead
+
+###
+OPTIONS http://localhost:8080/someOptions
+
+###

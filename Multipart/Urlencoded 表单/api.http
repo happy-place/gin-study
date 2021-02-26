@@ -1,0 +1,28 @@
+# 传 nick
+POST http://localhost:8080/form_post
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="message"
+
+hello
+--WebAppBoundary
+Content-Disposition: form-data; name="nick"
+
+world
+###
+
+# 不传 nick,使用默认值
+POST http://localhost:8080/form_post
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="message"
+
+hello
+--WebAppBoundary
+Content-Disposition: form-data; name="nick1"
+
+world
+###
+

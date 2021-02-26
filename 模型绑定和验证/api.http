@@ -1,0 +1,42 @@
+### password 缺少
+POST http://localhost:8080/loginJSON
+content-type: application/json
+
+{
+  "user": "manu"
+}
+
+### password 错误
+POST http://localhost:8080/loginJSON
+content-type: application/json
+
+{
+  "user": "manu",
+  "password": "1234"
+}
+
+### 成功请求 传入json
+POST http://localhost:8080/loginJSON
+content-type: application/json
+
+{
+  "user": "manu",
+  "password": "123"
+}
+
+### 传入 xml
+POST http://localhost:8080/loginXML
+content-type: application/xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <user>manu</user>
+    <password>123</password>
+</root>
+
+### 成功请求 传入 form 表单
+POST http://localhost:8080/loginForm
+content-type: application/x-www-form-urlencoded
+
+user=manu&password=123
+###

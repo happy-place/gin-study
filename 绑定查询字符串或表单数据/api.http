@@ -1,0 +1,7 @@
+###
+
+# curl -X GET "localhost:8085/testing?name=appleboy&address=xyz&birthday=1992-03-15"
+GET localhost:8085/testing?name=appleboy&address=xyz&birthday=1992-03-15
+
+###
+

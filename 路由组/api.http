@@ -1,0 +1,19 @@
+###
+POST http://localhost:8080/v1/login
+
+###
+POST http://localhost:8080/v1/submit
+
+###
+POST http://localhost:8080/v1/read
+
+###
+POST http://localhost:8080/v2/login
+
+###
+POST http://localhost:8080/v2/submit
+
+###
+POST http://localhost:8080/v2/read
+
+###

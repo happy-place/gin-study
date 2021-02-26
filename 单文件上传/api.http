@@ -1,0 +1,16 @@
+###
+
+# curl -X POST http://localhost:8080/upload
+#  -F "file=@/Users/appleboy/test.zip"
+#  -H "Content-Type: multipart/form-data"
+POST http://localhost:8080/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="React-Component原理.png"
+
+< /Users/huhao/Desktop/React-Component原理.png
+--WebAppBoundary--
+
+###
+

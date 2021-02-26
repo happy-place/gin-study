@@ -1,0 +1,24 @@
+### 无需认证
+GET http://localhost:8080/benchmark
+
+### 正确认证
+POST http://localhost:8080/login
+Authorization: Basic foo bar
+
+### 错误认证
+POST http://localhost:8080/login
+Authorization: Basic foo1 bar
+
+### post read with auth
+POST http://localhost:8080/read
+Authorization: Basic foo bar
+
+### post submit with auth
+POST http://localhost:8080/submit
+Authorization: Basic foo bar
+
+### 嵌套路由
+GET http://localhost:8080/testing/analytics
+Authorization: Basic foo bar
+
+###

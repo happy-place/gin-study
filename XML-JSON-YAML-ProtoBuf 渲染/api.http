@@ -1,0 +1,15 @@
+GET http://localhost:8080/someJSON
+
+###
+GET http://localhost:8080/moreJSON
+
+###
+GET http://localhost:8080/someXML
+
+###
+GET http://localhost:8080/someYAML
+
+###
+GET http://localhost:8080/someProtoBuf
+
+###
