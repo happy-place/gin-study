@@ -1,5 +1,7 @@
 ## Gin
 
+[参考](https://learnku.com/docs/gin-gonic/2019/examples-bind-single-binary-with-template/6200)
+
 [使用 AsciiJSON 生成具有转义的非 ASCII 字符的 ASCII-only JSON。](./AsciiJSON/main.go)
 
 [HTML 渲染](HTML%20渲染)
